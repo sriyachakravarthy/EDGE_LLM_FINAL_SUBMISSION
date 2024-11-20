@@ -74,10 +74,12 @@ python peak_memory_usage.py --model_name $path_to_model_folder
  <img width="294" alt="image" src="https://github.com/user-attachments/assets/e8d756d3-ccc3-40d4-b2d0-a1ae5b790813">
 
 
-
  
 # Submissions
 1. Submitted models can be found in the link provided in ``saved_model.txt``
+2. Original models (before MLC compilation) can be found in ``Original_Models`` folder from the above link
+3. MLC Compiled models can be found in ``MLC_COMPILED_MODELS`` folder from the above link
+4. Screenshots of the running app for phi2 has been provided in ``screenshots`` folder in this GitHub Repository
 
 
 ## Results 
@@ -85,12 +87,15 @@ python peak_memory_usage.py --model_name $path_to_model_folder
 ### Evaluation Results Summary 
 
 
-
 | Model       | Commonsenseqa_gen | FewChid_gen | bbh_gen | HumanEval | GSM8K | TruthfulQA | Memory       | Throughput             |
 |-------------|-------------------|-------------|---------|-----------|-------|------------|--------------|----------------------- |
 | **Llama3**  | 22.11             | 13.59       | 7.87    | 0.61      | 1.9   | 0.18       | 8.755 GB     | 71.61 inf/s 0.014 s    |
 | **Qwen**    | 0                 | 0.55        | 1.84    | 0         | 0.83  | 0          | 7 GB         | 77.73 inf/s 0.0129 s   |
 | **Phi**     | 65.68             | 12.29       | 59.4    | 31.1      | 61.56 | 0.18       |  6.143 GB    | 13.53 inf/s 0.0739 s   |
+
+### Screenshots of the running app
+![Application](https://github.com/user-attachments/assets/28a11291-c5af-46e9-a041-1ea4322b9042)
+![Phi-2](https://github.com/user-attachments/assets/75ddd831-8068-4239-a062-64f11c5cb01e)
 
 
 #### Notes
@@ -117,9 +122,7 @@ python peak_memory_usage.py --model_name $path_to_model_folder
 
 ### MLC compilation
 
-- Link for converted_model file can be found in converted_weight/converted_weight.txt
-- Optionally, it can be found in converted_model folder
-- As per the feedback, APK file,  script to package the MLC model file into the APK and a screenshot of the successful run have been submitted in this repository.
+- Link for converted_model file can be found in ``saved_models.txt`` 
 - Refer to the Submission Commands.txt
   
 
