@@ -97,7 +97,8 @@ python peak_memory_usage.py --model_name $path_to_model_folder
 ![Application](https://github.com/user-attachments/assets/28a11291-c5af-46e9-a041-1ea4322b9042)
 ![Phi-2](https://github.com/user-attachments/assets/75ddd831-8068-4239-a062-64f11c5cb01e)
 
-
+## Errors encountered
+We encountered errors while compiling Llama and Qwen models. Refer to``` MLC COMPILATION ERRORS``` folder in this repository
 #### Notes
 
 - hftype chat was used while generating results with batch size 1 and max output length 1024 for llama and qwen models and base type was used for phi2
