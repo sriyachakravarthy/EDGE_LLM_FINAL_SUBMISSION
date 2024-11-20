@@ -13,13 +13,14 @@ This repository has preliminary submission details for [**Edge-Device Large Lang
 ## Track chosen: Compression challenge
 ### Strategy:
 
-   For pruning, we utilized [Shortened LLaMA: Depth Pruning for Large Language Models with Comparison of Retraining Methods](https://arxiv.org/abs/2402.02834) which adopts depth pruning that removes entire layers or blocks, while keeping the size of the remaining weights unchanged. 
+1. For pruning qwen and llama models, we utilized [Shortened LLaMA: Depth Pruning for Large Language Models with Comparison of Retraining Methods](https://arxiv.org/abs/2402.02834) which adopts depth pruning that removes entire layers or blocks, while keeping the size of the remaining weights unchanged.
+2. For finetuning, as mentioned in the starter kit of the competition, we used [c4 dataset] (https://huggingface.co/datasets/c4) and [alpaca dataset] (https://huggingface.co/datasets/silk-road/alpaca-data-gpt4-chinese) 
  
 
 ### Evaluating local models
 
 1. Download models from Original_models folder in fp16 format using the provided link in ``saved_model.txt`` into a folder.
-2. The downloaded folders contents should look like
+2. The downloaded folders' content should look like
    ```
    ├── config.json # Configuration file for the model
    ├── generation_config.json # Generation-specific configuration
