@@ -68,6 +68,12 @@ python peak_memory_usage.py --model_name $path_to_model_folder
  #### Results
  #### Peak memory during inference for LLAMA
  <img width="297" alt="image" src="https://github.com/user-attachments/assets/5562227e-88d4-4833-93f2-150192a22b56">
+ #### Peak memory during inference for QWEN
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/ef7e22a8-f40f-492a-9610-d15a423a5ba3">
+ #### Peak memory during inference for PHI
+ <img width="294" alt="image" src="https://github.com/user-attachments/assets/e8d756d3-ccc3-40d4-b2d0-a1ae5b790813">
+
+
 
  
 # Submissions
