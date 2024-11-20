@@ -1,0 +1,28 @@
+cd C:\Users\user\Desktop\mlc-llm\android\MLCChat
+
+conda activate mlc-llm
+
+set ANDROID_NDK=C:\Users\user\AppData\Local\Android\Sdk\ndk\27.0.11718014
+set TVM_NDK_CC=C:\Users\user\AppData\Local\Android\Sdk\ndk\27.0.11718014\toolchains\llvm\prebuilt\windows-x86_64\bin\aarch64-linux-android24-clang
+set JAVA_HOME=C:\jbr
+set TVM_SOURCE_DIR=C:\Users\user\Desktop\mlc-llm\3rdparty\tvm
+set TVM_HOME=C:\Users\user\Desktop\mlc-llm\3rdparty\tvm
+set MLC_LLM_SOURCE_DIR=C:\Users\user\Desktop\mlc-llm
+
+set MODEL_NAME=phi-2
+set CONV_TEMPLATE=phi-2
+
+set PRUNE_LEVEL=0.00-pruned
+set QUANTIZATION=q0f16
+set LOCAL_MODEL_PATH=.\dist\models\%MODEL_NAME%\
+set MLC_MODEL_PATH=.\dist\bundle\%MODEL_NAME%-%QUANTIZATION%-%PRUNE_LEVEL%\
+
+mlc_llm gen_config %LOCAL_MODEL_PATH% --quantization %QUANTIZATION% --conv-template %CONV_TEMPLATE% -o %MLC_MODEL_PATH%
+mlc_llm convert_weight %LOCAL_MODEL_PATH% --quantization %QUANTIZATION% -o %MLC_MODEL_PATH%
+
+Move the output folder %MLC_MODEL_PATH% to the below path:
+C:\Users\user\AppData\Local\mlc_llm\model_weights\hf\submission
+
+mlc_llm package
+
+python bundle_weight.py --apk-path app\release\app-release.apk
