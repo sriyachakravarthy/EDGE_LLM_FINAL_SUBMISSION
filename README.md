@@ -33,7 +33,8 @@ This repository has preliminary submission details for [**Edge-Device Large Lang
                    
 #### Running the tasks
  
-Tasks on the downloaded models were run using the following code
+Tasks on the downloaded models should be run using the following code
+
 ```
 # remove -r latest if reusing previous examples is not intended
 opencompass --datasets [name of the dataset] --hf-type chat (base for phi2) \
@@ -41,6 +42,23 @@ opencompass --datasets [name of the dataset] --hf-type chat (base for phi2) \
 --model-kwargs device_map='auto' trust_remote_code=True \
 --batch-size 1 -r latest --max-out-len 1024 --max-num-workers 1
 ```
+
+#### Commands we used
+
+##### PHI
+```
+opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_gen humaneval_gen FewCLUE_chid_gen bbh_gen    --hf-type base --hf-path path_to_phi_model  --tokenizer-path microsoft/phi-2  --model-kwargs device_map='auto' trust_remote_code=True torch_dtype=torch.float16   --max-num-workers 4   --max-out-len 1024   -r latest   --batch-size 4 \
+```
+##### QWEN
+```
+opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_gen humaneval_gen FewCLUE_chid_gen bbh_gen    --hf-type chat   --hf-path path_to_qwen_15_model   --tokenizer-path Qwen/Qwen2-7B-Instruct  --model-kwargs device_map='auto' trust_remote_code=True torch_dtype=torch.float16   --max-num-workers 4   --max-out-len 1024   -r latest   --batch-size 4 \
+```
+##### LLAMA
+```
+opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_gen humaneval_gen FewCLUE_chid_gen bbh_gen    --hf-type chat   --hf-path path_to_llama_20_model   --tokenizer-path meta-llama/Meta-Llama-3.1-8B-Instruct   --model-kwargs device_map='auto' trust_remote_code=True torch_dtype=torch.float16   --max-num-workers 4   --max-out-len 1024   -r latest   --batch-size 4 \
+```
+
+
  
  
 # Submissions
