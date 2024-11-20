@@ -18,7 +18,8 @@ This repository has preliminary submission details for [**Edge-Device Large Lang
 
 ### Evaluating local models
 
-1. Download models in fp16 format using the provided link in ``saved_model.txt`` into a folder.
+1. Download models from Original_models folder in fp16 format using the provided link in ``saved_model.txt`` into a folder.
+2. The folder should contain ├── config.json # Configuration file for the model ├── generation_config.json # Generation-specific configuration ├── special_tokens_map.json # Mapping of special tokens ├── tokenizer_config.json # Configuration file for the tokenizer ├── tokenizer.json # Tokenizer data file ├── model.safetensors.index.json # Index file for the model weights ├── model-00001-of-00002.safetensors # Part 1 of model weights in Safetensors format └── model-00002-of-00002.safetensors # Part 2 of model weights in Safetensors format
  
 #### Running the tasks
  
@@ -33,7 +34,8 @@ opencompass --datasets [name of the dataset] --hf-type chat (base for phi2) \
  
  
 # Submissions
-1. Submitted models before mlc conpilation can be found in the link provided in ``saved_model.txt``
+1. Submitted models can be found in the link provided in ``saved_model.txt``
+
 
 ## Results 
 
