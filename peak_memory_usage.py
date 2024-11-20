@@ -14,7 +14,7 @@ def get_ram_usage():
 # Set up argument parser
 def parse_args():
     parser = argparse.ArgumentParser(description="Run inference on a model and track memory usage.")
-    parser.add_argument("model_name", type=str, help="Path to the model directory")
+    parser.add_argument("--model_name", type=str, help="Path to the model directory")
     return parser.parse_args()
 
 # Main function
