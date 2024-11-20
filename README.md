@@ -14,7 +14,7 @@ This repository has preliminary submission details for [**Edge-Device Large Lang
 ### Strategy:
 
 1. For pruning qwen and llama models, we utilized [Shortened LLaMA: Depth Pruning for Large Language Models with Comparison of Retraining Methods](https://arxiv.org/abs/2402.02834) which adopts depth pruning that removes entire layers or blocks, while keeping the size of the remaining weights unchanged.
-2. For finetuning, as mentioned in the starter kit of the competition, we used [c4 dataset] (https://huggingface.co/datasets/c4) and [alpaca dataset] (https://huggingface.co/datasets/silk-road/alpaca-data-gpt4-chinese) 
+2. For finetuning, as mentioned in the starter kit of the competition, we used [**c4 dataset**] (https://huggingface.co/datasets/c4) and [**alpaca dataset**] (https://huggingface.co/datasets/silk-road/alpaca-data-gpt4-chinese) 
  
 
 ### Evaluating local models
