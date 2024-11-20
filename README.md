@@ -63,7 +63,7 @@ opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_g
  ### Checking peak memory usage during inference
  To check the peak memory usage during inference, we ran ``peak_memory_usage.py``
 ```
-python peak_memory_usage.py --path_to_model_folder
+python peak_memory_usage.py --model_name $path_to_model_folder
 ```
  #### Results
  
