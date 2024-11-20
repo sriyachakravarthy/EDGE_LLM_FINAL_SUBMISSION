@@ -70,16 +70,13 @@ opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_g
 ### Evaluation Results Summary 
 
 
-| Metric             | Result |
-|--------------------|--------|
-| CommonsenseQA      | 65.68 |
-| BIG-Bench-Hard     | 59.4  |
-| GSM8K              | 61.56 |
-| HumanEval          | 31.1   |
-| CHID               | 12.29  |
-| TruthfulQA         | 0.18   |
-| Throughput         | 34.66  inf/s    |
-| Memory-Usage       | 6.534 GB      |
+
+| Model       | Commonsenseqa_gen | FewChid_gen | bbh_gen | HumanEval | GSM8K | TruthfulQA | Memory       | Throughput |
+|-------------|-------------------|-------------|---------|-----------|-------|------------|--------------|------------|
+| **Llama3**  | 20                | 17.2        | 1.05    | 7.01      | 1.22  | 2.20       | 8.584 GB     |            |
+| **Qwen**    | 0                 | 0.55        | 1.84    | 0         | 0.83  | 0          | 7 GB         |            |
+| **Phi**     |                   |             |         |           |       |            |              |            |
+
 
 #### Notes
 
