@@ -1,0 +1,4 @@
+C:/Users/submission/Desktop/mlc-llm/cpp/serve/threaded_engine.cc:283: Check failed: (output_res.IsOk()) is false: Insufficient GPU memory error: The available single GPU memory is 6452.269 MB, which is less than the sum of model weight size (6524.231 MB) and temporary buffer size (12868.189 MB).
+1. You can set a larger "gpu_memory_utilization" value.
+2. If the model weight size is too large, please enable tensor parallelism by passing `--tensor-parallel-shards $NGPU` to `mlc_llm gen_config` or use quantization.
+3. If the temporary buffer size is too large, please use a smaller `--prefill-chunk-size` in `mlc_llm gen_config`.
