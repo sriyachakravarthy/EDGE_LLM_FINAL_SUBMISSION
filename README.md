@@ -66,6 +66,9 @@ opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_g
 python peak_memory_usage.py --model_name $path_to_model_folder
 ```
  #### Results
+ #### Peak memory during inference for LLAMA
+ <img width="297" alt="image" src="https://github.com/user-attachments/assets/5562227e-88d4-4833-93f2-150192a22b56">
+
  
 # Submissions
 1. Submitted models can be found in the link provided in ``saved_model.txt``
@@ -77,11 +80,11 @@ python peak_memory_usage.py --model_name $path_to_model_folder
 
 
 
-| Model       | Commonsenseqa_gen | FewChid_gen | bbh_gen | HumanEval | GSM8K | TruthfulQA | Memory       | Throughput |
-|-------------|-------------------|-------------|---------|-----------|-------|------------|--------------|------------|
-| **Llama3**  | 20                | 17.2        | 1.05    | 7.01      | 1.22  | 2.20       | 8.584 GB     |            |
-| **Qwen**    | 0                 | 0.55        | 1.84    | 0         | 0.83  | 0          | 7 GB         |            |
-| **Phi**     |                   |             |         |           |       |            |              |            |
+| Model       | Commonsenseqa_gen | FewChid_gen | bbh_gen | HumanEval | GSM8K | TruthfulQA | Memory       | Throughput             |
+|-------------|-------------------|-------------|---------|-----------|-------|------------|--------------|----------------------- |
+| **Llama3**  | 22.11             | 13.59       | 7.87    | 0.61      | 1.9   | 0.18       | 8.755 GB     | 71.61 inf/s 0.014 s    |
+| **Qwen**    | 0                 | 0.55        | 1.84    | 0         | 0.83  | 0          | 7 GB         | 77.73 inf/s 0.0129 s   |
+| **Phi**     | 65.68             | 12.29       | 59.4    | 31.1      | 61.56 | 0.18       |  6.143 GB    | 13.53 inf/s 0.0739 s   |
 
 
 #### Notes
