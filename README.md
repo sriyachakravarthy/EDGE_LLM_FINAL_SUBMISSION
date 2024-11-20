@@ -19,7 +19,7 @@ This repository has preliminary submission details for [**Edge-Device Large Lang
 
 ### Evaluating local models
 
-1. Download models from Original_models folder in fp16 format using the provided link in ``saved_model.txt`` into a folder.
+1. Download models from Original_models folder in fp16 format using the provided link in ``saved_models.txt`` into a folder.
 2. The downloaded folders' content should look like
    ```
    ├── config.json # Configuration file for the model
