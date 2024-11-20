@@ -20,7 +20,7 @@ This repository has preliminary submission details for [**Edge-Device Large Lang
 
 1. Download models from Original_models folder in fp16 format using the provided link in ``saved_model.txt`` into a folder.
 2. The downloaded folder;s contents should look like
-    .
+.
 ├── config.json # Configuration file for the model
 ├── generation_config.json # Generation-specific configuration
 ├── special_tokens_map.json # Mapping of special tokens
