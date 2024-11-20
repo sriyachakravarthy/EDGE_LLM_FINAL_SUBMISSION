@@ -1,0 +1,16 @@
+FATAL EXCEPTION: Thread-5
+Process: ai.mlc.mlcchat, PID: 25382
+org.apache.tvm.Base$TVMError: [00:09:15] C:/Users/submission/Desktop/mlc-llm/cpp/serve/threaded_engine.cc:283: Check failed: (output_res.IsOk()) is false: Insufficient GPU memory error: The available single GPU memory is 6452.269 MB, which is less than the sum of model weight size (9076.273 MB) and temporary buffer size (2836.074 MB).
+1. You can set a larger "gpu_memory_utilization" value.
+2. If the model weight size is too large, please enable tensor parallelism by passing `--tensor-parallel-shards $NGPU` to `mlc_llm gen_config` or use quantization.
+3. If the temporary buffer size is too large, please use a smaller `--prefill-chunk-size` in `mlc_llm gen_config`.
+Stack trace not available when DMLC_LOG_STACK_TRACE is disabled at compile time.
+
+	at org.apache.tvm.Base.checkCall(Base.java:173)
+	at org.apache.tvm.Function.invoke(Function.java:130)
+	at ai.mlc.mlcllm.JSONFFIEngine.runBackgroundLoop(JSONFFIEngine.java:64)
+	at ai.mlc.mlcllm.MLCEngine$backgroundWorker$1.invoke(MLCEngine.kt:42)
+	at ai.mlc.mlcllm.MLCEngine$backgroundWorker$1.invoke(MLCEngine.kt:40)
+	at ai.mlc.mlcllm.BackgroundWorker$start$1.invoke(MLCEngine.kt:19)
+	at ai.mlc.mlcllm.BackgroundWorker$start$1.invoke(MLCEngine.kt:18)
+	at kotlin.concurrent.ThreadsKt$thread$thread$1.run(Thread.kt:30)
