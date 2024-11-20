@@ -1,5 +1,5 @@
-PrunedModel	Commonsenseqa_gen	FewChid_gen	bbh_gen	HumanEval	GSM8K	TruthfulQA	Memory	Throughput
-Llama3	20	17.2	1.05	7.01	1.22	2.2	8.584 GB	
-Qwen	0	0.55	1.84	0	0.83	0	7 GB	
+PrunedModel	Commonsenseqa_gen	FewChid_gen	bbh_gen	HumanEval	GSM8K	TruthfulQA	Memory	            Throughput
+Llama3	      20	                17.2	     1.05	    7.01	 1.22	    2.2	    8.584 GB	
+Qwen	        0	                  0.55	    1.84	  0	0.83	  0	              7 GB	
 Phi								
 
