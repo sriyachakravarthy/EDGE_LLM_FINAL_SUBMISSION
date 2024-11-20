@@ -60,7 +60,10 @@ opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_g
 ```
 
 
- 
+ ### Checking peak memory usage during inference
+```
+
+```
  
 # Submissions
 1. Submitted models can be found in the link provided in ``saved_model.txt``
