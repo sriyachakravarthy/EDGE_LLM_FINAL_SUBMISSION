@@ -72,7 +72,6 @@ test_cuda_before=[]
 # Repeat the measurement
 for _ in range(args.num_repeats):
     torch.cuda.synchronize()  
-    print(_)
     start_time = time.time()
     with torch.no_grad():
         output = model(**inputs)
