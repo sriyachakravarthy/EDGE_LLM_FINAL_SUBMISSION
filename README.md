@@ -91,8 +91,11 @@ on Results Summary
 | **Phi**     | 65.52             | 14.34       | 59.46   | 28.66     | 62.09 | 0.18       |  6.143 GB    | 13.53 inf/s 0.0739 s   |
 
 ### Screenshots of the running app
-![Application](https://github.com/user-attachments/assets/28a11291-c5af-46e9-a041-1ea4322b9042)
-![Phi-2](https://github.com/user-attachments/assets/75ddd831-8068-4239-a062-64f11c5cb01e)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/28a11291-c5af-46e9-a041-1ea4322b9042" alt="Application" width="300">
+  <img src="https://github.com/user-attachments/assets/75ddd831-8068-4239-a062-64f11c5cb01e" alt="Phi-2" width="300">
+</p>
+
 
 ## Errors encountered
 We encountered errors while compiling Llama and Qwen models. Refer to``` MLC COMPILATION ERRORS``` folder in this repository. We were able to compile all the models. However, Llama and Qwen fail at runtime due to out-of-memory issues on the target device. This comes despite our adherence to the competition rules, where the models in question utilize only around 9 GB of memory on the desktop (as reported in the table above).
