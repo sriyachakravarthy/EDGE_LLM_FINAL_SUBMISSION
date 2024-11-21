@@ -75,6 +75,7 @@ python EvaluateThroughputAndMemory.py --model_name model_name(microsoft/phi-2 or
 2. Original models (before MLC compilation) can be found in ``model_checkpoint.txt`` 
 3. MLC Compiled models can be found in ``converted_models.txt``
 4. Screenshots of the running app for phi2 has been provided in ``screenshots`` folder in this GitHub Repository
+5. app-release.apk can be found in the link in ``app_release.txt``
 
 
 ## Results 
