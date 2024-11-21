@@ -89,7 +89,7 @@ python peak_memory_usage.py --model_name $path_to_model_folder
 
 | Model       | Commonsenseqa_gen | FewChid_gen | bbh_gen | HumanEval | GSM8K | TruthfulQA | Memory       | Throughput             |
 |-------------|-------------------|-------------|---------|-----------|-------|------------|--------------|----------------------- |
-| **Llama3**  | 22.11             | 13.59       | 7.87    | 0.61      | 1.9   | 0.18       | 8.755 GB     | 71.61 inf/s 0.014 s    |
+| **Llama3**  | 22.36             | 13.59       | 7.91    | 0.61      | 1.97  | 0.18       | 8.755 GB     | 71.61 inf/s 0.014 s    |
 | **Qwen**    | 0                 | 0.55        | 1.84    | 0         | 0.83  | 0          | 7 GB         | 77.73 inf/s 0.0129 s   |
 | **Phi**     | 65.68             | 12.29       | 59.4    | 31.1      | 61.56 | 0.18       |  6.143 GB    | 13.53 inf/s 0.0739 s   |
 
@@ -113,7 +113,7 @@ We encountered errors while compiling Llama and Qwen models. Refer to``` MLC COM
 - **Operating System**: Ubuntu 22.04 LTS
 - **ROCm Version**: 5.7
 
--The Throughput and memory evaluation numbers from obtained from Nvidia A100 GPU with the following specs:
+-The Throughput and memory evaluation numbers were obtained from Nvidia A100 GPU with the following specs:
 
 - CPU Configuration: AMD EPYC 7742 64-Core Processor    
 - System RAM: 512 GB
