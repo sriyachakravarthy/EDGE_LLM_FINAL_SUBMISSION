@@ -71,8 +71,8 @@ python EvaluateThroughputAndMemory.py --model_name path_to_model
 
  
 # Submissions
-1. Submitted models can be found in the links provided in ``original_checkpoint.txt`` and ``converted_models.txt``
-2. Original models (before MLC compilation) can be found in ``original_checkpoint.txt`` 
+1. Submitted models can be found in the links provided in ``model_checkpoint.txt`` and ``converted_models.txt``
+2. Original models (before MLC compilation) can be found in ``model_checkpoint.txt`` 
 3. MLC Compiled models can be found in ``converted_models.txt``
 4. Screenshots of the running app for phi2 has been provided in ``screenshots`` folder in this GitHub Repository
 
