@@ -65,13 +65,7 @@ opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_g
 ```
 python peak_memory_usage.py --model_name $path_to_model_folder
 ```
- #### Results
- #### Peak memory during inference for LLAMA
- <img width="297" alt="image" src="https://github.com/user-attachments/assets/5562227e-88d4-4833-93f2-150192a22b56">
- #### Peak memory during inference for QWEN
-<img width="299" alt="image" src="https://github.com/user-attachments/assets/ef7e22a8-f40f-492a-9610-d15a423a5ba3">
- #### Peak memory during inference for PHI
- <img width="294" alt="image" src="https://github.com/user-attachments/assets/e8d756d3-ccc3-40d4-b2d0-a1ae5b790813">
+
 
 
  
@@ -98,7 +92,7 @@ python peak_memory_usage.py --model_name $path_to_model_folder
 ![Phi-2](https://github.com/user-attachments/assets/75ddd831-8068-4239-a062-64f11c5cb01e)
 
 ## Errors encountered
-We encountered errors while compiling Llama and Qwen models. Refer to``` MLC COMPILATION ERRORS``` folder in this repository. We were able to compile all the models. However, Llama and Qwen fail at runtime due to out-of-memory issues on the target device. This comes despite our adherence to the competition rules, where the models in question utilize only around 9 GB of memory on the desktop.
+We encountered errors while compiling Llama and Qwen models. Refer to``` MLC COMPILATION ERRORS``` folder in this repository. We were able to compile all the models. However, Llama and Qwen fail at runtime due to out-of-memory issues on the target device. This comes despite our adherence to the competition rules, where the models in question utilize only around 9 GB of memory on the desktop (as reported in the table above).
 #### Notes
 
 - hftype chat was used while generating results with batch size 1 and max output length 1024 for llama and qwen models and base type was used for phi2
