@@ -86,7 +86,7 @@ python EvaluateThroughputAndMemory.py --model_name path_to_model
 |-------------|-------------------|-------------|---------|-----------|-------|------------|--------------|----------------------- |
 | **Llama3**  | 22.36             | 13.59       | 7.91    | 0.61      | 1.97  | 0.18       | 8.755 GB     | 71.61 inf/s 0.014 s    |
 | **Qwen**    | 0                 | 0.55        | 1.84    | 0         | 0.83  | 0          | 7 GB         | 77.73 inf/s 0.0129 s   |
-| **Phi**     | 65.68             | 12.29       | 59.4    | 31.1      | 61.56 | 0.18       |  6.143 GB    | 13.53 inf/s 0.0739 s   |
+| **Phi**     | 65.52             | 14.34       | 59.46   | 28.66     | 62.09 | 0.18       |  6.143 GB    | 13.53 inf/s 0.0739 s   |
 
 ### Screenshots of the running app
 ![Application](https://github.com/user-attachments/assets/28a11291-c5af-46e9-a041-1ea4322b9042)
