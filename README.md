@@ -98,7 +98,7 @@ python peak_memory_usage.py --model_name $path_to_model_folder
 ![Phi-2](https://github.com/user-attachments/assets/75ddd831-8068-4239-a062-64f11c5cb01e)
 
 ## Errors encountered
-We encountered errors while compiling Llama and Qwen models. Refer to``` MLC COMPILATION ERRORS``` folder in this repository
+We encountered errors while compiling Llama and Qwen models. Refer to``` MLC COMPILATION ERRORS``` folder in this repository. We were able to compile all the models. However, Llama and Qwen fail at runtime due to out-of-memory issues on the target device. This comes despite our adherence to the competition rules, where the models in question utilize only around 9 GB of memory on the desktop.
 #### Notes
 
 - hftype chat was used while generating results with batch size 1 and max output length 1024 for llama and qwen models and base type was used for phi2
