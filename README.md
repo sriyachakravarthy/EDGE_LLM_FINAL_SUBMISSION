@@ -85,7 +85,7 @@ python EvaluateThroughputAndMemory.py --model_name path_to_model
 | Model       | Commonsenseqa_gen | FewChid_gen | bbh_gen | HumanEval | GSM8K | TruthfulQA | Memory       | Throughput             |
 |-------------|-------------------|-------------|---------|-----------|-------|------------|--------------|----------------------- |
 | **Llama3**  | 22.36             | 13.59       | 7.91    | 0.61      | 1.97  | 0.18       | 8.755 GB     | 71.61 inf/s 0.014 s    |
-| **Qwen**    | 0                 | 0.55        | 1.84    | 0         | 0.83  | 0          | 7 GB         | 77.73 inf/s 0.0129 s   |
+| **Qwen**    | 0                 | 0.45        | 1.88    | 0         | 0.99  | 0          | 7.184 GB     | 77.73 inf/s 0.0129 s   |
 | **Phi**     | 65.52             | 14.34       | 59.46   | 28.66     | 62.09 | 0.18       |  6.143 GB    | 13.53 inf/s 0.0739 s   |
 
 ### Screenshots of the running app
