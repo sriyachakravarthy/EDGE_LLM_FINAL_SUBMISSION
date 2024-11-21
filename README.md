@@ -63,7 +63,7 @@ opencompass --datasets truthfulqa_gen commonsenseqa_7shot_cot_gen_734a22 gsm8k_g
  ### Checking peak memory usage during inference
  To check the peak memory usage during inference, we ran ``EvaluateMemoryandThroughput.py`` (provided in the starter kit)
 ```
-python EvaluateThroughputAndMemory.py --model_name path_to_model
+python EvaluateThroughputAndMemory.py --model_name model_name(microsoft/phi-2 or  meta-llama/Meta-Llama-3.1-8B-Instruct or Qwen/Qwen2-7B-Instruct) --model_path path_to_the_downloaded_model
 
 ```
 
