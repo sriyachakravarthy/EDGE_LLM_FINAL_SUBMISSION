@@ -19,7 +19,7 @@ This repository has preliminary submission details for [**Edge-Device Large Lang
 
 ### Evaluating local models
 
-1. Download models from Original_models folder in fp16 format using the provided link in ``saved_models.txt`` into a folder.
+1. Download models from Original_models folder in fp16 format using the provided link in ``model_checkpoint.txt`` into a folder.
 2. The downloaded folders' content should look like
    ```
    ├── config.json # Configuration file for the model
@@ -71,9 +71,9 @@ python EvaluateThroughputAndMemory.py --model_name path_to_model
 
  
 # Submissions
-1. Submitted models can be found in the link provided in ``saved_model.txt``
-2. Original models (before MLC compilation) can be found in ``Original_Models`` folder from the above link
-3. MLC Compiled models can be found in ``MLC_COMPILED_MODELS`` folder from the above link
+1. Submitted models can be found in the links provided in ``original_checkpoint.txt`` and ``converted_models.txt``
+2. Original models (before MLC compilation) can be found in ``original_checkpoint.txt`` 
+3. MLC Compiled models can be found in ``converted_models.txt``
 4. Screenshots of the running app for phi2 has been provided in ``screenshots`` folder in this GitHub Repository
 
 
